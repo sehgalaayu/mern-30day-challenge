@@ -1,0 +1,35 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  padding: 1em;
+}
+
+.box {
+  padding: 1.5em;
+  border-radius: 10px;
+  text-align: center;
+  min-height: 100px;
+
+  display: grid;
+  place-items: center;
+}
+
+.box1 {
+  background-color: #feeac9;
+}
+.box2 {
+  background-color: #ffcdc9;
+}
+.box3 {
+  background-color: #fdacac;
+}
+.box4 {
+  background-color: #fd7979;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
